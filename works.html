@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Composatron: How it works</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Composatron 9000</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+                
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="works.html">How It Works</a></li>
+								<li><a href="running.html">Algorithm Working</a></li>
+								<li><a href="index.html#about-us">about us</a></li>
+            
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="banner">
+						<div class="inner">
+								<h2 id="intro">How it works</h2>
+								<p id="intro">The journey of how we got it to work.
+                            
+                            
+                            </p>
+							</div>
+							
+					</section>
+
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Magenta: The Woes</h3>
+									<p>We initially tried to use Google Magenta, a pre-beta program which utilises technologies such as tensor-flow to create a sofisticated artifical intelligence. Magenta is being written by Google to allow computers to create art and music.</p>
+                                    
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6ZLB2-_0Hxw" frameborder="0" allowfullscreen></iframe>
+
+									<p>Unfortunately, due to our lack of skill in all areas around AI, Tensor-Flow and the buggy nature of Magenta we were unable to use this technology. We tried for weeks to get it up and running, and passed so many errors, but it got to the point where it felt like all we were getting was one error after the other and it never ended.</p>
+                                    
+                                    <p>
+                                    It's still worth exploring our process from start to finish on how we tried to get it working, so let's begin. 
+                                    Initially, Murphy was going to get the main Tensor-Flow program working while patrick wrote the genetic algorithm and Sam would create all of the files for the program to learn from and then also turn what the program gave out into music. 
+                                    </p>
+                                    
+                                    <h4> Week One:</h4>
+                                    <p> 
+                                        After the first week, Murphy had begun to explore how magenta works by setting up a docker version on his own system in an attempt to run it. This unfortunately failed. During this time, Patrick couldn't work on the actual algorithm for Tensor-Flow so he instead continued his research on how it would work and began sketching a visual version of the layout. 
+                                    </p>
+                                    <h4> Week Two:</h4>
+                                    <img src="images/error.png" height="100%" width="95%" />
+                                    <p>
+                                    <i> The image above is not an actual error we got, we just don't have any screenshots of them</i>
+                                        <br><br>
+                                    At the end of week two, Sam had created a server to host everything, and set it up with Tensor-Flow, Magenta and everything else that should have been needed to get it up and running, not being confined to a docker image. He then allowed Murphy access to remove connect to the server to do anything he needed. During this stage they kept getting errors of which they didn't understand and painstakingly got through one after the other, but they seemed to never end. 
+                                    </p>
+                                    <h4> Week Three:</h4>
+                                    <p> Week three of Magenta ended pretty early as we made the group decision to leave magenta and work on our own from the ground up.</p>
+                                    
+                                    
+									<h3 class="major">Custom: Ground Up Approach</h3>
+									<p>After all of the failed attempts at using Magenta and time running out we decided to write our own from the groun up. This may sound counter-intruitive to write our own from the beginning but since we are writing every line we know what is going on and don't have to work out why nothing is working with the very limited documentation available.</p>
+                                    
+                                    <img src="images/git.png" height="100%" width="95%" />
+                                    <p>
+                                    We first begun with creating a repository on github to store the data and also allow collaboration on the code. So patrick could write the algorithm and murphy could write the actual supporting code. 
+                                    </p>
+                                    <p> For this we decided to use P5.js as it allowed to to be setup and run 24/7 on a web server and many people could access it at once, not just one person who has the files  downloaded. </p>
+                                    
+                                    <p> Now when it comes to the final sound output, unfortunately Murphy was tasked with getting the output from the AI to a file and then Sam was going to convert that to sound. This part never got done, and so we were unable to get the musical output complete, however everything else still works.</p>
+                                    
+ 
+                                    <h3 class="major">Organisation and Communication</h3>
+                                    
+                                    <img src="images/trello.png" height="100%" width="95%" />
+                                    <p>
+                                    With every group project, communication and organisation is always an important necessity. In this assignment, we utilised both Trello and Slack for our orgainsation and communication. Unfortunately the Trello was only setup halfway through the progess, once we had decided to create our oww ground up version. The main point is because there was so much more to keep in place and so many more areas to keep an eye on that a Trello board was needed. It was probably a good idea to set up a digital one, not only because the studio cleanup was to happen during our development but also because Sam flew to Australia during the last week of development, so it allowed him to work remotely.
+                                    </p>
+                                    
+                                    
+                                    <h3 class="major">The Code</h3>
+                                    
+                                    <P> Well the system has to run off some code, so let's explore some of it. This code itself can be viewed on the <a href="https://github.com/Murphxm/compositron9000"> github repo.</a> <-- Click me :) </P>
+                                        <h4> The Population Code</h4>
+                                        <pre><code> function Population() {
+  this.songs = [];
+  this.popsize = 10;
+  this.matingpool = [];
+
+  for (var i = 0; i < this.popsize; i++) {
+    this.songs[i] = new Song();
+  }
+
+  this.evaluate = function() {
+    for (var i = 0; i < this.popsize; i++) {
+        this.songs[i].fitness = ratings[i];
+        var n = this.songs[i].fitness * 100;
+        for (var j = 0; j < n; j++) {
+        this.matingpool.push(this.songs[i]);
+        //this.matingpool[i] = this.songs[i];
+      }
+    }
+    if (devShow == true) {
+      createP("mating pool size: " + this.matingpool.length);
+    }
+  }
+
+  this.selecting = function() {
+    for (var i = 0; i < this.popsize; i ++) { //for as many songs as there are
+      var a = floor(random(this.matingpool.length)); //selects random song from mating pool
+      //var b = floor(random(this.matingpool.length)); //and another
+      var b = this.selectParentB(a); //and another, checking that they are not the same
+      var partnerA = this.matingpool[a]; //assigns value to partnerA
+      var partnerB = this.matingpool[b]; //and the second to partnerB
+      var newDNA = partnerA.dna.crossover(partnerB.dna);
+      var child = new Song(newDNA);// //initializes child as return product of
+                                                       //crossover function of partnerA, widt
+                                                       //arguments: partnerB.
+      if (devShow) {
+        createP("child " + i + " (song " + a + ", song " + b + "): " + newDNA.genes)
+      }
+      child.dna.mutate(i); //runs the child through the mutate function
+
+      this.songs[i] = child; //replaces current song with newly created child
+    }
+  }
+
+  this.selectParentB = function(q) {
+    var p = floor(random(this.matingpool.length)); //selects random song from mating pool
+    if (p != q) { //if it is not equal to song a
+      return p; //return it as var b
+    } else { //otherwise...
+      return this.selectParentB(q); //...runs function again
+    }
+  }
+
+  this.run = function() {
+    for (var i = 0; i < this.songs.length; i++) {
+      this.songs[i].show(i);
+    }
+  }
+}
+</code></pre>
+
+
+
+<br>
+
+<h4> The DNA Code</h4>
+<pre><code>function DNA(genes) {
+  if (genes) {
+    this.genes = genes;
+  } else {
+    this.genes = [];
+    for (var i = 0; i < 12; i ++) {
+      this.genes[i] = floor(random(0, 10));
+    }
+  }
+
+  this.crossover = function(partnerDNA) {//partnerDNA) {
+    var newgenes = [];
+    for (var i = 0; i < this.genes.length; i++) {
+      if (random(0, 1) < 0.5) {
+        newgenes[i] = this.genes[i];
+      } else {
+        newgenes[i] = partnerDNA.genes[i];
+      }
+    }
+    return new DNA(newgenes);
+    //return new DNA(this.partnerDNA.genes);
+  }
+
+  this.mutate = function(j) {
+    for (var i = 0; i < this.genes.length; i++) {
+      if (random(0, 1) < 0.01) {
+        this.genes[i] = floor(random(0, 10));
+        if (devShow) {
+          createP("mutated (song " + j + ", gene " + i + "): " + this.genes[i]);
+        }
+      }
+    }
+  }
+}
+
+/**
+var child = new Song(this.genes); //genes refers to contents of song (instr and midi)
+for (var i = 0; i < this.genes.length; i++) {
+  if (random(0, 1) > 0.5) child.genes[i] = this.genes[i];
+  else child.genes[i] = partner.genes[i];
+}
+return child;
+}
+*/
+</code></pre>
+                                        
+                                        
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							
+							<ul class="copyright">
+								<li>&copy; Composatron 9000 Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
